@@ -15,7 +15,7 @@ public class ContactService {
     ContactRepository contactRepository;
 
     public ContactModel getContactById(Long id){
-        return contactRepository.findById(id).orElseThrow(() -> new RuntimeException("Person not found."));
+        return contactRepository.findById(id).orElseThrow(() -> new RuntimeException("Pessoa nao encontrada."));
     }
 
     public List<ContactModel> getAllContacts(){

@@ -22,7 +22,7 @@ public class PersonService {
     }
 
     public PersonModel getPersonById(Long id){
-        return personRepository.findById(id).orElseThrow(() -> new RuntimeException("Person not found."));
+        return personRepository.findById(id).orElseThrow(() -> new RuntimeException("Pessoa nao encontrada"));
     }
 
     public List<PersonModel> getAllPerson(){

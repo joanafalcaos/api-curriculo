@@ -22,6 +22,7 @@ public class PersonModel {
     private Long id;
     private String Name;
     private String lastName;
+    private String ocupation;
     private int age;
 
     @OneToOne(cascade = CascadeType.ALL)
